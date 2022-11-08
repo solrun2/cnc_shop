@@ -30,7 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: kColorsWhite,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/add_product');
+            },
             icon: SvgPicture.asset('assets/icons/add.svg'),
           ),
           IconButton(
@@ -44,22 +46,39 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, childAspectRatio: 0.75),
             itemCount: 10,
             itemBuilder: (BuildContext context, int index) {
               return Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(6),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AspectRatio(
                         aspectRatio: 1,
                         child: Container(
-                          decoration: BoxDecoration(color: kColorsCream),
-                        ))
+                          decoration: BoxDecoration(
+                              color: kColorsRed,
+                              borderRadius: BorderRadius.circular(15)),
+                        )),
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Text('Product name',
+                        style: Theme.of(context).textTheme.subtitle1),
+                    SizedBox(
+                      height: 12,
+                    ),
+                    Text(
+                      '\$Price',
+                      style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w600,
+                          color: kColorsPurple),
+                    )
                   ],
                 ),
               );
