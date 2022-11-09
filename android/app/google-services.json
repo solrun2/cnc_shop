@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856647816074",
+    "project_id": "solrunshop",
+    "storage_bucket": "solrunshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856647816074:android:49eb73a48015b4bad32e73",
+        "android_client_info": {
+          "package_name": "com.cncx.cnc_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856647816074-ct2baj1pghb6u0dn74hf4cjsqoa49atu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCww3BmpSF4L-_jKD4aJ3O3VfLoaZxqvsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856647816074-ct2baj1pghb6u0dn74hf4cjsqoa49atu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

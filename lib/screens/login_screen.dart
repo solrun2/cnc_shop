@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 40, top: 20, bottom: 20),
-                    child: Text('CNC Shop',
+                    child: Text('SoLRuN Shop',
                         style: Theme.of(context).textTheme.headline1),
                   ),
                   Form(

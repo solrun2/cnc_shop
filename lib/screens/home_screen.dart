@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         aspectRatio: 1,
                         child: Container(
                           decoration: BoxDecoration(
-                              color: kColorsRed,
+                              color: kColorsCream,
                               borderRadius: BorderRadius.circular(15)),
                         )),
                     SizedBox(
